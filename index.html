@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Email Template Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Email Template Generator</h1>
+
+    <select id="type">
+        <option value="internship">Internship Request</option>
+        <option value="leave">Leave Application</option>
+        <option value="job">Job Application</option>
+    </select>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="company" placeholder="Company / Manager Name">
+    <input type="text" id="role" placeholder="Role / Subject">
+
+    <button onclick="generateEmail()">Generate Email</button>
+
+    <textarea id="output" readonly></textarea>
+
+    <button onclick="copyEmail()">Copy Email</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
